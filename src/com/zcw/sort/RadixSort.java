@@ -13,6 +13,7 @@ public class RadixSort {
         System.out.println(Arrays.toString(arr));
     }
     //基数排序,个十百...位依次比较大小,每次比较完,化为一个数组,再次比较
+    //稳定的排序,但是会消耗内存空间
     public static void rdixSort(int[] arr){
         //得到数组中最大数的位数
         int max = arr[0];//假设第一个数最大

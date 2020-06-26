@@ -12,6 +12,7 @@ public class MergeSort {
         for (int e : a)
             System.out.print(e+" ");
     }
+
     public static void mergeSort(int [] a,int start,int end){
         if(start<end){//当子序列中只有一个元素时结束递归
             int mid=(start+end)/2;//划分子序列
