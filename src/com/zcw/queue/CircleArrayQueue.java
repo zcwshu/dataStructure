@@ -122,7 +122,6 @@ class CircleArray {
 
     //获得有效数据个数
 
-
     public int getSize() {
         return (rear+maxSize-front)%maxSize;
     }
