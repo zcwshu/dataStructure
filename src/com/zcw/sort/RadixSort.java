@@ -9,6 +9,7 @@ import java.util.Arrays;
 public class RadixSort {
     public static void main(String[] args) {
         int[] arr = {53,3,542,748,14,214};
+        Arrays.sort(arr);
         rdixSort(arr);
         System.out.println(Arrays.toString(arr));
     }
