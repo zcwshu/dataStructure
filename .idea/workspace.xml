@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8be7b273-3915-4bad-a90c-42a83264966c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/zcw/search/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zcw/search/FibonacciSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zcw/search/InsertSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/zcw/search/SeqSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zcw/dataBase/Conn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/zcw/hash/HashTableDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/zcw/sort/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/zcw/sort/RadixSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.iml" beforeDir="false" afterPath="$PROJECT_DIR$/data.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,59 +37,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zcw/sort/RadixSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="37" column="54" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zcw/search/SeqSearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zcw/search/BinarySearch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="57" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1555#1564#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zcw/search/FibonacciSearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
+            <state relative-caret-position="300">
               <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zcw/search/InsertSearch.java">
+        <entry file="file://$PROJECT_DIR$/src/com/zcw/hash/HashTableDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="424">
+              <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zcw/sort/MergeSort.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/zcw/dataBase/Conn.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+            <state relative-caret-position="404">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +106,8 @@
         <option value="$PROJECT_DIR$/src/com/zcw/search/BinarySearch.java" />
         <option value="$PROJECT_DIR$/src/com/zcw/search/InsertSearch.java" />
         <option value="$PROJECT_DIR$/src/com/zcw/search/FibonacciSearch.java" />
+        <option value="$PROJECT_DIR$/src/com/zcw/hash/HashTableDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/zcw/dataBase/Conn.java" />
       </list>
     </option>
   </component>
@@ -189,8 +161,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/java/mysql-connector-java-8.0.13.jar!/" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
@@ -205,13 +187,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FibonacciSearch">
+  <component name="RunManager" selected="Application.Conn">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zcw.search.BinarySearch" />
       <module name="data" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zcw.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Conn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zcw.dataBase.Conn" />
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zcw.dataBase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -232,6 +227,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HashTableDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zcw.hash.HashTableDemo" />
+      <module name="data" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zcw.hash.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InsertSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zcw.search.InsertSearch" />
       <module name="data" />
@@ -245,39 +253,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zcw.sort.QuickSort" />
-      <module name="data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zcw.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadixSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zcw.sort.RadixSort" />
-      <module name="data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zcw.sort.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Conn" />
+        <item itemvalue="Application.HashTableDemo" />
         <item itemvalue="Application.FibonacciSearch" />
         <item itemvalue="Application.InsertSearch" />
         <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.RadixSort" />
-        <item itemvalue="Application.QuickSort" />
       </list>
     </recent_temporary>
   </component>
@@ -293,7 +275,8 @@
       <updated>1592995830564</updated>
       <workItem from="1592995833223" duration="3167000" />
       <workItem from="1592999140812" duration="1456000" />
-      <workItem from="1593005403384" duration="57074000" />
+      <workItem from="1593005403384" duration="62088000" />
+      <workItem from="1593255270440" duration="2726000" />
     </task>
     <task id="LOCAL-00001" summary="第二次提交">
       <created>1592998043540</created>
@@ -330,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1593167732917</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="第四次提交">
+      <created>1593220498512</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1593220498512</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61697000" />
+    <option name="totallyTimeSpent" value="69437000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,20 +338,20 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17583893" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1785235" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2777778" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34615386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.33048433" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49932885" weight="0.32905984" />
@@ -370,7 +360,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24966443" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" weight="0.22684564" />
       <window_info anchor="right" id="Maven" order="5" weight="0.3295302" />
       <window_info anchor="right" id="Word Book" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -556,6 +546,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zcw/sort/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zcw/sort/RadixSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -570,20 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zcw/search/InsertSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zcw/sort/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zcw/search/BinarySearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -595,12 +578,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zcw/search/InsertSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zcw/search/FibonacciSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
+        <state relative-caret-position="300">
           <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d84f3fa1-253b-400a-8326-a5d494c492d6/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9446709d-d0e7-49df-a0da-ed34a9ce06db/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zcw/hash/HashTableDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zcw/dataBase/Conn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>data</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
