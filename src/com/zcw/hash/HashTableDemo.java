@@ -15,6 +15,7 @@ public class HashTableDemo {
         while(true){
             System.out.println("add:添加员工");
             System.out.println("list:显示员工");
+            System.out.println("find:查找员工");
             System.out.println("exit:退出系统");
             key = scanner.next();
             switch(key){
@@ -29,6 +30,11 @@ public class HashTableDemo {
                     break;
                 case "list":
                     hashTable.list();
+                    break;
+                case "find":
+                    System.out.println("请输入要查找的id");
+                    id = scanner.nextInt();
+                    hashTable.findEmpById(id);
                     break;
                 case "exit":
                     scanner.close();
@@ -66,6 +72,18 @@ class HashTable{
     public void list(){
         for(int i = 0;i < size;i++){
             empLinkedLists[i].list(i);
+        }
+    }
+
+    //根据输入的id查找雇员
+    public void findEmpById(int id){
+        //使用散列函数确定那个链表查找
+        int empLinkedListNO = hashFun(id);
+        Emp emp = empLinkedLists[empLinkedListNO].findEmpByID(id);
+        if (emp != null){
+            System.out.printf("在%d条链表中找到雇员 id=%d\n",(empLinkedListNO+1),id);
+        }else{
+            System.out.println("在哈希表中没有找到该雇员");
         }
     }
 
@@ -143,6 +161,7 @@ class EmpLinkedList{
             }
             if (curEmp.next == null){
                 curEmp = null;
+                break;
             }
             curEmp = curEmp.next;
         }
