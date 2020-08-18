@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script type="text/javascript">
+        var i = 0;
+        var a;
+        function test(){
+            a = setInterval("showTime()",5000);
+        }
+        function showTime(){
+            var today = new Date();
+            alert("the time is "+ today.toString());
+            i++;
+            alert(i);
+            if(i ==2){
+                clearInterval(a);    //清除定时器需要传入一个对象(你要清除那个对象)
+            }
+        }
+    </script>
+</head>
+<body>my first js setInterval and setTimeout function
+<input type="button" value="setinterval" οnclick="test();"></body>
+</html>

@@ -1,60 +1,45 @@
-package com.zcw.tree;
+package com.zcw.tree.thread;
 
 /**
  * @Author: AndrewBar
- * @Date: Created in 23:17 2020/7/14
+ * @Date: Created in 16:58 2020/7/27
  */
-public class BinaryTreeDemo {
+public class ThreadeBinaryTreeDemo {
     public static void main(String[] args) {
-        //创建一棵二叉树
-        BinaryTree binaryTree = new BinaryTree();
-        //创建需要的节点
-        HeroNode root = new HeroNode(1, "宋江");
-       HeroNode node2 = new HeroNode(2, "吴用");
-       HeroNode node3 = new HeroNode(3, "卢俊义");
-       HeroNode node4 = new HeroNode(4, "林冲");
-       HeroNode node5 = new HeroNode(5, "关胜");
 
-        //说明,我们先手动创建二叉树,后面学习递归的方式创建二叉树
-        root.setLeft(node2);
-        root.setRight(node3);
-        node3.setRight(node4);
-        node3.setLeft(node5);
-        binaryTree.setRoot(root);
-
-        /*System.out.println("前序遍历");
-        binaryTree.preOrder();
-
-        System.out.println("中序遍历");
-        binaryTree.infixOrder();
-
-        System.out.println("后序遍历");
-        binaryTree.postOrder();
-
-        //前序遍历
-        System.out.println("前序遍历的方式");
-        HeroNode heroNode = binaryTree.preOrderSearch(5);
-        if (heroNode != null){
-            System.out.printf("找到了信息为no=%d name=%s",heroNode.getNo(),heroNode.getName());
-        }else{
-            System.out.printf("没有找到no=%d的英雄",5);
-        }*/
-
-        //测试删除节点
-        System.out.println("删除前,前序遍历");
-        binaryTree.preOrder();
-        binaryTree.delNode(5);
-        //binaryTree.delNode(3);
-        System.out.println("删除后,前序遍历");
-        binaryTree.preOrder();
     }
 }
 
+//定义二叉树 实现线索化功能的二叉树
 class BinaryTree{
     private HeroNode root;
 
+    //为了实现线索化,需要创建要给指向当前节点的前驱节点的指针
+    //在递归线索化时,pre 总是保留前一个节点
+    private HeroNode pre = null;
+
     public void setRoot(HeroNode root){
         this.root = root;
+    }
+    /**
+     *编写对二叉树进行中序线索化的方法
+     * @param node 就是当前需要线索化的节点
+     */
+    public void threadedNodes(HeroNode node){
+        //如果node==null,不能线索化
+        if (node == null){
+            return;
+        }
+        //先线索化左子树
+        threadedNodes(node.getLeft());
+        //线索化当前节点
+        //处理当前节点的前驱节点
+        if (node.getLeft() == null){
+            //当前节点的左指针
+        }
+        //再线索化右子树
+        threadedNodes(node.getRight());
+
     }
 
     //删除节点
@@ -100,21 +85,21 @@ class BinaryTree{
     }
 
     //前序
-    public HeroNode preOrderSearch(int no){
+    public com.zcw.tree.thread.HeroNode preOrderSearch(int no){
         if (root != null){
             return root.preOrderSearch(no);
         }else{
             return null;
         }
     }
-    public HeroNode infixOrderSearch(int no){
+    public com.zcw.tree.thread.HeroNode infixOrderSearch(int no){
         if (root != null){
             return root.infixOrderSearch(no);
         }else{
             return null;
         }
     }
-    public HeroNode postOrderSearch(int no){
+    public com.zcw.tree.thread.HeroNode postOrderSearch(int no){
         if (root != null){
             return root.postOrderSearch(no);
         }else{
@@ -123,12 +108,33 @@ class BinaryTree{
     }
 }
 
-//创建HeroNode节点
-class HeroNode{
+//创建HeroNode
+class HeroNode {
     private int no;
     private String name;
     private HeroNode left;
     private HeroNode right;
+
+    //如果leftType == 0 表示指向左子树,如果1 则表示指向前驱节点
+    //如果rightType == 0 表示指向右子树,如果1 则表示指向后继节点
+    private int leftType;
+    private int rightType;
+
+    public int getLeftType() {
+        return leftType;
+    }
+
+    public void setLeftType(int leftType) {
+        this.leftType = leftType;
+    }
+
+    public int getRightType() {
+        return rightType;
+    }
+
+    public void setRightType(int rightType) {
+        this.rightType = rightType;
+    }
 
     public HeroNode(int no, String name) {
         this.no = no;
@@ -176,80 +182,80 @@ class HeroNode{
     }
 
     //递归删除节点
-    public void deleteNode(int no){
+    public void deleteNode(int no) {
         //判断左子节点是否为要删除的节点
-        if (this.left != null && this.left.no == no){
+        if (this.left != null && this.left.no == no) {
             //if (this.left.left != null)
             this.left = null;
             return;
         }
         //判断右子节点是否为要删除的节点
-        if (this.right != null && this.right.no == no){
+        if (this.right != null && this.right.no == no) {
             this.right = null;
             return;
         }
         //递归判断左子树
-        if (this.left != null){
+        if (this.left != null) {
             this.left.deleteNode(no);
         }
         //递归判断右子树
-        if (this.right != null){
+        if (this.right != null) {
             this.right.deleteNode(no);
         }
     }
 
     //前序遍历
-    public void preOrder(){
+    public void preOrder() {
         System.out.println(this);//先输出父节点
         //递归向左子树遍历
-        if (this.left != null){
+        if (this.left != null) {
             this.left.preOrder();
         }
         //递归向右子树遍历
-        if (this.right != null){
+        if (this.right != null) {
             this.right.preOrder();
         }
     }
 
     //中序遍历
-    public void infixOrder(){
-        if (this.left != null){
+    public void infixOrder() {
+        if (this.left != null) {
             this.left.infixOrder();
         }
         System.out.println(this);
 
-        if (this.right != null){
+        if (this.right != null) {
             this.right.infixOrder();
         }
     }
 
     //后序遍历
-    public void postOrder(){
-        if (this.left != null){
+    public void postOrder() {
+        if (this.left != null) {
             this.left.postOrder();
         }
         System.out.println(this);
-        if (this.right != null){
+        if (this.right != null) {
             this.right.postOrder();
         }
         System.out.println(this);
     }
 
     //前序遍历查找
-    public HeroNode preOrderSearch(int no){
+    public HeroNode preOrderSearch(int no) {
         System.out.println("1次");
         //比较当前节点是不是
-        if (this.no == no){
+        if (this.no == no) {
             return this;
         }
         HeroNode resnode = null;
-        if (this.left != null){
-            resnode = this .left.preOrderSearch(no);
+        if (this.left != null) {
+            resnode = this.left.preOrderSearch(no);
         }
-        if (resnode != null){//说明左子树上找到
+        if (resnode != null) {//说明左子树上找到
             return resnode;
         }
-        if (this.right != null){
+        if (this.right != null) {
             resnode = this.right.preOrderSearch(no);
         }
         return resnode;
@@ -257,44 +263,43 @@ class HeroNode{
 
     //中序遍历查找
 
-    public HeroNode infixOrderSearch(int no){
+    public HeroNode infixOrderSearch(int no) {
         HeroNode resnode = null;
-        if (this.left != null){
-            resnode = this .left.infixOrderSearch(no);
+        if (this.left != null) {
+            resnode = this.left.infixOrderSearch(no);
         }
-        if (resnode != null){//说明左子树上找到
+        if (resnode != null) {//说明左子树上找到
             return resnode;
         }
         //比较当前节点是不是
-        if (this.no == no){
+        if (this.no == no) {
             return this;
         }
 
-        if (this.right != null){
+        if (this.right != null) {
             resnode = this.right.infixOrderSearch(no);
         }
         return resnode;
     }
 
     //后序遍历查找
-    public HeroNode postOrderSearch(int no){
+    public HeroNode postOrderSearch(int no) {
         HeroNode resnode = null;
-        if (this.left != null){
-            resnode = this .left.postOrderSearch(no);
+        if (this.left != null) {
+            resnode = this.left.postOrderSearch(no);
         }
-        if (resnode != null){//说明左子树上找到
+        if (resnode != null) {//说明左子树上找到
             return resnode;
         }
-        if (this.right != null){
+        if (this.right != null) {
             resnode = this.right.postOrderSearch(no);
         }
-        if (resnode != null){//说明左子树上找到
+        if (resnode != null) {//说明左子树上找到
             return resnode;
         }
-        if (this.no == no){
+        if (this.no == no) {
             return this;
         }
         return resnode;
     }
-
 }

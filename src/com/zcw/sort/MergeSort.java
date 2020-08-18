@@ -12,7 +12,6 @@ public class MergeSort {
         for (int e : a)
             System.out.print(e+" ");
     }
-
     public static void mergeSort(int [] a,int start,int end){
         if(start<end){//当子序列中只有一个元素时结束递归
             int mid=(start+end)/2;//划分子序列
@@ -21,7 +20,6 @@ public class MergeSort {
             merge(a, start, mid, end);//合并
         }
     }
-
     //两路归并算法，两个排好序的子序列合并为一个子序列
     public static void merge(int []a,int left,int mid,int right){
         int []tmp=new int[a.length];//辅助数组
@@ -33,11 +31,9 @@ public class MergeSort {
             else
                 tmp[k++]=a[p2++];
         }
-
         while(p1<=mid) tmp[k++]=a[p1++];//如果第一个序列未检测完，直接将后面所有元素加到合并的序列中
         while(p2<=right) tmp[k++]=a[p2++];//同上
-
-        //复制回原素组
+        //复制回原数组
         for (int i = left; i <=right; i++)
             a[i]=tmp[i];
     }

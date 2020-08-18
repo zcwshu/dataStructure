@@ -3,10 +3,6 @@ package com.zcw.dataBase;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
@@ -14,19 +10,23 @@ import java.sql.Statement;
  * @Date: Created in 19:13 2020/6/27
  */
 public class Conn {
+    private static Connection conn = null;
     public static void main(String[] args) {
         Connection con;
         //jdbc驱动
-        String driver="com.mysql.cj.jdbc.Driver";
+        String driver="com.mysql.jdbc.Driver";
         //这里我的数据库是cxxt
         String url="jdbc:mysql://localhost:3306/test?&useSSL=false&serverTimezone=UTC";
         String user="root";
         String password="123456";
+
         try {
             //注册JDBC驱动程序
             Class.forName(driver);
             //建立连接
             con = DriverManager.getConnection(url, user, password);
+            Statement stmt = con.createStatement();
+
             if (!con.isClosed()) {
                 System.out.println("数据库连接成功");
             }
@@ -38,5 +38,8 @@ public class Conn {
             e.printStackTrace();
             System.out.println("数据库连接失败");
         }
+    }
+    public static Connection getConnection(){
+        return conn;
     }
 }
